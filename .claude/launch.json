@@ -1,0 +1,20 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Flask Backend",
+      "runtimeExecutable": "D:\\Kiran\\Thrissur\\NSE\\backend\\venv\\Scripts\\python.exe",
+      "runtimeArgs": [
+        "backend/app_demo.py"
+      ],
+      "port": 5000,
+      "autoPort": false
+    },
+    {
+      "name": "React Frontend",
+      "runtimeExecutable": "D:\\Kiran\\Thrissur\\NSE\\start_react.bat",
+      "port": 3000,
+      "autoPort": false
+    }
+  ]
+}
