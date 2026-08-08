@@ -1,0 +1,122 @@
+===============================================
+NSE STOCK SCREENER - FINAL DEPLOYMENT STEPS
+===============================================
+
+✅ COMPLETED:
+✓ GitHub CLI installed and authenticated
+✓ Repository exists on GitHub
+✓ Code is ready to deploy
+
+===============================================
+YOUR GITHUB REPOSITORY
+===============================================
+
+Repository: https://github.com/Kishor-Kiran/NSE-stock-screener
+
+View your code at this URL above!
+
+===============================================
+NEXT: DEPLOY TO RENDER (Get Live URL)
+===============================================
+
+Follow these 7 steps:
+
+1. Open: https://render.com/
+2. Sign up with GitHub (Kishor-Kiran account)
+3. Click: Dashboard
+4. Click: New + > Web Service
+5. Click: Connect a repository
+6. Find & Click: NSE-stock-screener
+7. Click: Connect
+
+CONFIGURE SERVICE:
+
+Name: nse-stock-screener-api
+Environment: Python 3
+Region: Oregon (or your preference)
+Branch: main
+
+Build Command:
+  pip install -r backend/requirements-prod.txt
+
+Start Command:
+  cd backend && gunicorn app_demo:app --bind 0.0.0.0:$PORT
+
+Plan: Free
+
+Then click: CREATE WEB SERVICE
+
+⏳ WAIT 3-5 MINUTES for deployment...
+
+When you see "Live" badge, copy your URL!
+
+===============================================
+YOUR LIVE API URL WILL BE:
+===============================================
+
+https://nse-stock-screener-api-xxxxx.onrender.com
+
+(Replace xxxxx with your service ID)
+
+TEST IT:
+https://nse-stock-screener-api-xxxxx.onrender.com/api/health
+https://nse-stock-screener-api-xxxxx.onrender.com/api/stocks/nse
+
+===============================================
+OPTIONAL: DEPLOY FRONTEND TO VERCEL
+===============================================
+
+For the visual UI:
+
+1. Go: https://vercel.com/
+2. Sign up with GitHub
+3. Add New Project
+4. Import NSE-stock-screener
+5. Framework: React
+6. Build Command: cd frontend && npm run build
+7. Output Directory: frontend/build
+8. Add Environment Variable:
+   Name: REACT_APP_API_URL
+   Value: https://nse-stock-screener-api-xxxxx.onrender.com
+9. Deploy
+
+Your Frontend URL:
+https://nse-stock-screener-kingskiran.vercel.app
+
+===============================================
+QUICK LINKS
+===============================================
+
+GitHub Repository:
+https://github.com/Kishor-Kiran/NSE-stock-screener
+
+Render Dashboard:
+https://render.com/dashboard
+
+Vercel Dashboard:
+https://vercel.com/dashboard
+
+===============================================
+SUMMARY
+===============================================
+
+✅ All code on GitHub
+✅ Ready for Render deployment
+✅ Live URL coming soon!
+
+Just follow the 7 Render steps above and you'll have:
+
+LIVE API: https://nse-stock-screener-api-xxxxx.onrender.com
+LIVE UI: https://nse-stock-screener-kingskiran.vercel.app
+
+===============================================
+NEED HELP?
+===============================================
+
+Render Docs: https://render.com/docs
+Vercel Docs: https://vercel.com/docs
+GitHub: https://github.com/Kishor-Kiran/NSE-stock-screener
+
+===============================================
+🎉 YOU'RE ALMOST THERE!
+===============================================
