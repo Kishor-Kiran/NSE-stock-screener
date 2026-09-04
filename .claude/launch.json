@@ -12,9 +12,13 @@
     },
     {
       "name": "React Frontend",
-      "runtimeExecutable": "D:\\Kiran\\Thrissur\\NSE\\start_react.bat",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "start"
+      ],
       "port": 3000,
-      "autoPort": false
+      "autoPort": false,
+      "cwd": "D:\\Kiran\\Thrissur\\NSE\\frontend"
     }
   ]
 }
