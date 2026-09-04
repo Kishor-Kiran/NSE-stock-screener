@@ -7,25 +7,6 @@ import './App.css';
 const NSE_STOCKS = ['MARUTI.NS', 'LT.NS', 'INFY.NS', 'WIPRO.NS', 'RELIANCE.NS', 'HDFC.NS', 'ICICI.NS', 'BAJAJ.NS', 'SUNPHARMA.NS', 'ASIANPAINT.NS'];
 const NYSE_STOCKS = ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TESLA', 'META', 'NVDA', 'AMD', 'INTC', 'TSLA'];
 
-// Calculate RSI (14 period)
-const calculateRSI = (prices) => {
-  if (prices.length < 14) return 50;
-
-  let gains = 0, losses = 0;
-  for (let i = 1; i < 14; i++) {
-    const diff = prices[i] - prices[i - 1];
-    if (diff > 0) gains += diff;
-    else losses -= diff;
-  }
-
-  const avgGain = gains / 14;
-  const avgLoss = losses / 14;
-
-  if (avgLoss === 0) return 100;
-  const rs = avgGain / avgLoss;
-  return 100 - (100 / (1 + rs));
-};
-
 // Generate realistic mock stock data
 const generateMockStock = (ticker) => {
   const basePrice = Math.random() * 5000 + 500;
